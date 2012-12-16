@@ -1,10 +1,10 @@
 <h1> Hello, <%= @name %> </h1>
 
-<! -- form_tag method takes the name of our controller method sign_in as its :action paramter -->
+<!-- form_tag method takes the name of our controller method sign_in as its :action parameter -->
 <%= form_tag :action => 'sign_in' do %>
 	<P>Enter your name:
 <!-- visitor_name is the form field identifier for data sent back to the controller -->
-<!-- @name is the default text the form field will contain -->
+<!-- @name is the text the form field will contain when sent back-->
 
 		<%= text_field_tag 'visitor_name', @name %></p>
 
